@@ -1,16 +1,16 @@
-# Wellar Flutter App 📱
+# Wisebase Flutter App 📱
 
-Flutter Android application developed as part of the **Wellar AI SaaS platform**.
+Flutter Android application developed as part of the **Wisebase SaaS platform**.
 
 This repository contains the mobile application responsible for user workflows, authentication, API communication, notifications, and mobile-specific experiences.
 
-The application is connected with the Wellar AI ecosystem through REST APIs and shared backend services.
+The application is connected with the Wisebase ecosystem through REST APIs and shared backend services.
 
 ---
 
 ## My Role
 
-I designed and developed the Flutter mobile application as part of the complete Wellar AI platform.
+I designed and developed the Flutter mobile application as part of the complete Wisebase platform.
 
 Responsibilities:
 
@@ -19,14 +19,14 @@ Responsibilities:
 - Integrated REST APIs with backend services
 - Implemented authentication flows
 - Added Firebase Cloud Messaging (FCM) notifications
-- Connected mobile features with the Wellar AI platform
+- Connected mobile features with the Wisebase platform
 - Prepared Android release builds and testing workflows
 
 ---
 
 ## Overview
 
-Wellar AI includes a complete multi-platform system:
+Wisebase includes a complete multi-platform system:
 
 - Angular web application
 - Flutter mobile application
@@ -99,7 +99,7 @@ Flutter Mobile Application
 Directus Backend
             |
             |
-Wellar AI Platform
+Wisebase Platform
             |
             |
 AI Processing Services
@@ -119,7 +119,7 @@ flutter build apk --release
 ---
 
 ## Project Purpose:
-This mobile application was developed as part of a complete SaaS product, providing users with mobile access to Wellar AI workflows and intelligent analysis features.
+This mobile application was developed as part of a complete SaaS product, providing users with mobile access to Wisebase workflows and intelligent analysis features.
 
 ---
 
