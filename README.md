@@ -1,140 +1,68 @@
-# Wisebase Flutter App 📱
+# Wisebase Flutter App
 
-Flutter Android application developed as part of the **Wisebase SaaS platform**.
+Flutter Android app for **Wisebase**, a multi-role workforce management platform (owner, HR, manager, employee). I built Wisebase at DataC and keep improving it.
 
-This repository contains the mobile application responsible for user workflows, authentication, API communication, notifications, and mobile-specific experiences.
+**Product page:** https://conntinuity.datac.com/
 
-The application is connected with the Wisebase ecosystem through REST APIs and shared backend services.
+## Screenshots
 
----
+<img width="32%" alt="Owner home" src="https://raw.githubusercontent.com/mnashat18/WiseBase-app/b5eb275a5b9ea57cba296eb795b79ce064fbd9f3/.claude/owner_today.png" />
+<img width="32%" alt="Readiness requests" src="https://raw.githubusercontent.com/mnashat18/WiseBase-app/b5eb275a5b9ea57cba296eb795b79ce064fbd9f3/.claude/owner_requests.png" />
+<img width="32%" alt="Start a readiness check" src="https://raw.githubusercontent.com/mnashat18/WiseBase-app/b5eb275a5b9ea57cba296eb795b79ce064fbd9f3/.claude/employee_scan_start_final.png" />
 
-## My Role
+## What the app does
 
-I designed and developed the Flutter mobile application as part of the complete Wisebase platform.
+- Login with email and Google sign-in
+- Role-based screens for owner, HR, manager and employee
+- Readiness requests and check history
+- Guided check with camera and voice steps
+- Alerts, notifications and push notifications (Firebase Cloud Messaging)
+- Workforce, compliance and reports views for managers
 
-Responsibilities:
+## Tech stack
 
-- Built the Flutter Android application from scratch
-- Developed mobile user interfaces and workflows
-- Integrated REST APIs with backend services
-- Implemented authentication flows
-- Added Firebase Cloud Messaging (FCM) notifications
-- Connected mobile features with the Wisebase platform
-- Prepared Android release builds and testing workflows
+Flutter, Dart, Material Design, REST APIs, Firebase Cloud Messaging.
 
----
+## How it fits together
 
-## Overview
-
-Wisebase includes a complete multi-platform system:
-
-- Angular web application
-- Flutter mobile application
-- Directus/PostgreSQL backend
-- Python FastAPI AI service
-
-This repository represents the mobile application layer.
-
----
-
-## Tech Stack
-
-### Mobile Development
-
-- Flutter
-- Dart
-- Android
-- Material Design
-- Responsive Mobile UI
-
-### Integration
-
-- REST APIs
-- Directus Backend
-- Authentication Services
-- Firebase Cloud Messaging (FCM)
-
-### Development Tools
-
-- Android Studio
-- Git/GitHub
-- Release APK Builds
-
----
-
-## Features
-
-### Authentication
-
-- User login workflows
-- Secure authentication integration
-- Session management
-
-### Mobile Experience
-
-- Role-based mobile interfaces
-- API-driven workflows
-- Push notifications
-- Camera-based workflows
-- Audio-related workflows
-- Responsive mobile layouts
-
-### Platform Integration
-
-- Communication with backend services
-- Real-time data synchronization
-- Shared workflows with the web platform
-
----
-
-## Architecture
+The app calls the Wisebase REST APIs. The backend is Directus on PostgreSQL, and the Wisebase AI service analyses the scan data. The repo includes the Directus extensions the mobile app uses in `backend/`.
 
 ```text
-Flutter Mobile Application
-            |
-            |
-        REST APIs
-            |
-            |
-Directus Backend
-            |
-            |
-Wisebase Platform
-            |
-            |
-AI Processing Services
+Flutter app  ->  REST APIs  ->  Directus / PostgreSQL  ->  AI service
 ```
----
-## Development:
 
-Install dependencies:
+## Repository layout
+
+| Path | Contents |
+| --- | --- |
+| `lib/` | App source (screens, services, state, widgets) |
+| `test/` | Unit and widget tests |
+| `android/` | Android project |
+| `backend/` | Directus extensions used by the app |
+| `docs/` | Project documentation |
+| `assets/` | Branding assets |
+
+The `*.md` reports in the root (audits, plans and acceptance notes) are internal review notes.
+
+## Run locally
+
+```bash
 flutter pub get
-
-Run the application:
 flutter run
+```
 
-Build Android APK:
+Build a release APK:
+
+```bash
 flutter build apk --release
+```
 
----
+## Related repositories
 
-## Project Purpose:
-This mobile application was developed as part of a complete SaaS product, providing users with mobile access to Wisebase workflows and intelligent analysis features.
+- [WiseBase-frontend](https://github.com/mnashat18/WiseBase-frontend): Angular web app
+- [WiseBase-ai-server](https://github.com/mnashat18/WiseBase-ai-server) and [WiseBase_ai_v2](https://github.com/mnashat18/WiseBase_ai_v2): AI services
 
----
+## Author
 
-## Author:
-Mohamed Nashat Ghonim
-
-Frontend Engineer | Angular Developer
-
-GitHub:
-https://github.com/mnashat18
-
-LinkedIn:
-https://www.linkedin.com/in/mohamed-nashat-ghonim
-
-
-
-
-
+Mohamed Nashat Ghonim, Full-Stack Developer
+[LinkedIn](https://www.linkedin.com/in/mohamed-nashat-ghonim/) · [GitHub](https://github.com/mnashat18) · mnashat2508@gmail.com
